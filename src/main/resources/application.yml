@@ -1,0 +1,21 @@
+# phoenix 数据源自定义配置
+phoenix:
+  enable: true
+  url: jdbc:phoenix:192.168.67.133:2181
+  type: com.alibaba.druid.pool.DruidDataSource
+  driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
+  username:
+  password:
+  default-auto-commit: true
+
+max-active: 100
+initialSize: 1
+maxWait: 60000
+minIdle: 1
+timeBetweenEvictionRunsMillis: 60000
+minEvictableIdleTimeMillis: 300000
+testWhileIdle: true
+testOnBorrow: false
+testOnReturn: false
+poolPreparedStatements: true
+maxOpenPreparedStatements: 50
